@@ -101,10 +101,10 @@ python analyze_sorted.py
 
 # Import Directory
 
-Place your book images in this directory for processing.
+Copy your image folders to the import directory:
 
-- For `analyze_unsorted.py`: Images can be placed directly here or in subfolders
-- For `analyze_sorted.py`: Create subfolders and place images in them
+- For `analyze_unsorted.py`: Images can be in any order
+- For `analyze_sorted.py`: Images must be numbered sequentially (e.g., book-1.jpg, book-2.jpg)
 
 # Processed Directory
 
