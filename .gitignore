@@ -1,0 +1,49 @@
+# API keys and environment variables
+.env
+*.env
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual environment
+book_identifier/
+venv/
+env/
+ENV/
+.venv
+.env.local
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# System files
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Backups
+backup/
+*.bak
+*.tmp
+
+# Image import and processing directories (user data)
+import/
+processed/
+unidentified/
+
+# Log files
+*.log
+logs/
+
+# Local test files
+test_images/
+.coverage
+htmlcov/
