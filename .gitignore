@@ -35,9 +35,11 @@ backup/
 *.tmp
 
 # Image import and processing directories (user data)
-import/
-processed/
-unidentified/
+import/*
+!import/.gitkeep
+
+processed/*
+!processed/.gitkeep
 
 # Log files
 *.log

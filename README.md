@@ -53,6 +53,15 @@ Usage:
 python analyze_sorted.py
 ```
 
+## Folder Structure
+
+- `import/`: Place your book images here for processing
+  - For `analyze_unsorted.py`: Images can be placed directly here or in subfolders
+  - For `analyze_sorted.py`: Create subfolders and place sequentially numbered images in them
+- `processed/`: Processed book images will be saved here
+  - Identified books are organized by ISBN (e.g., `9789510328620_1.jpg` and `9789510328620_2.jpg`)
+  - Books without ISBN are saved in `isbn_missing` subfolder with title or sequential numbering
+
 ## Installation
 
 1. Clone the project
@@ -78,15 +87,6 @@ python analyze_sorted.py
    GOOGLE_API_KEY=your_api_key_here
    ```
 
-## Folder Structure
-
-- `import/`: Directory where book images to be identified are placed
-  - `analyze_unsorted.py`: Images can be placed directly in the import folder or in subfolders
-  - `analyze_sorted.py`: Images should be placed in subfolders within the import folder
-- `processed/`: Directory where identified images are stored
-  - Contains folders for identified books based on ISBN
-  - Each subfolder has an `isbn_missing` subfolder for identified books without an ISBN
-
 ## Requirements
 
 - Python 3.9 or newer
@@ -98,3 +98,14 @@ python analyze_sorted.py
   - Pillow>=10.0.0
   - numpy>=1.24.0
 - Image directory with book cover images
+
+# Import Directory
+
+Place your book images in this directory for processing.
+
+- For `analyze_unsorted.py`: Images can be placed directly here or in subfolders
+- For `analyze_sorted.py`: Create subfolders and place images in them
+
+# Processed Directory
+
+Processed book images will be saved here, organized by ISBN or in 'isbn_missing' subfolder.
